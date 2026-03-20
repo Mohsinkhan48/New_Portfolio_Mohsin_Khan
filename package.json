@@ -1,12 +1,13 @@
 {
+  "homepage": "https://mohsinkhan48.github.io/New_Portfolio_Mohsin_Khan",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "export": "next export",
+    "deploy": "npm run build && npm run export && gh-pages -d out"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4"
   }
